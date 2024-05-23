@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">siqaadmin</value>
-    <value name="lastModifiedDate">1716439659686</value>
+    <value name="lastModifiedDate">1716439675167</value>
     <value name="displayName">SIQAAdapterFlow</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -96,11 +96,11 @@
         </array>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">DatabaseAccount</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DatabaseAccount</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <number name="ui_step_index" type="Long">1</number>
         <number name="nodeIndex" type="Long">0</number>

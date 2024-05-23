@@ -31,6 +31,10 @@ services:
   packages:
   - name: SIQAGitSyncTest23MayProject
     version: "1.0"
+- serviceName: project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBNewInsert
+  packages:
+  - name: SIQAGitSyncTest23MayProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.heartBeatInterval
   : "0"
