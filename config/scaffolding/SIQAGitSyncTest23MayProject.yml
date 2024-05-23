@@ -7,6 +7,9 @@ packages:
   gitUrl: https://github.com/siqagituser/SIQAGitSyncTest23MayProject
   gitUsername: siqagituser
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
 - serviceName: project.siqagitsynctest23may.integrations:testForGitSync
   packages:
@@ -16,3 +19,62 @@ services:
   packages:
   - name: WmPublic
     version: 11.0.0.0.904
+- serviceName: project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DatabaseAccount
+  packages:
+  - name: SIQAGitSyncTest23MayProject
+    version: "1.0"
+- serviceName: project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQAGitSyncTest23MayProject
+    version: "1.0"
+- serviceName: project.siqagitsynctest23may.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQAGitSyncTest23MayProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.blockingTimeout
+  : "5000"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.password
+  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionEnabled
+  : "false"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.maximumPoolSize
+  : "20"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.databaseName
+  : SIQACloud
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.serverName
+  : vmiboint01
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.user
+  : sa
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.expireTimeout
+  : "5000"
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQAGitSyncTest23MayProject.project.siqagitsynctest23may.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.DatabaseAccount.connectionManagerSettings.poolIncrementSize
+  : "1"
