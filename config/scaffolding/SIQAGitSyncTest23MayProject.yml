@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/siqagituser/SIQAGitSyncTest23MayProject
   gitUsername: siqagituser
   gitBranch: main
+services:
+- serviceName: project.siqagitsynctest23may.integrations:testForGitSync
+  packages:
+  - name: SIQAGitSyncTest23MayProject
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.904
