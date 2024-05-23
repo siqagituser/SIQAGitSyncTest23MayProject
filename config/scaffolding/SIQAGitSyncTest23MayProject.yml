@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: SIQAGitSyncTest23MayProject
+  gitServerName: siqagituser
+  gitUrl: https://github.com/siqagituser/SIQAGitSyncTest23MayProject
+  gitUsername: siqagituser
+  gitBranch: main
